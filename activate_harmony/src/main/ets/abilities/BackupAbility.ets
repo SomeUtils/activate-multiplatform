@@ -3,7 +3,7 @@ import BackupExtensionAbility, { BundleVersion } from '@ohos.application.BackupE
 
 const DOMAIN = 0x0000;
 
-export default class Activate_harmonyBackupAbility extends BackupExtensionAbility {
+export default class BackupAbility extends BackupExtensionAbility {
   async onBackup() {
     hilog.info(DOMAIN, 'testTag', 'onBackup ok');
     await Promise.resolve();

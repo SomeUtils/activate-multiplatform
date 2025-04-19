@@ -2,8 +2,7 @@
   "module": {
     "name": "activate_harmony",
     "type": "entry",
-    "description": "$string:module_desc",
-    "mainElement": "Activate_harmonyAbility",
+    "mainElement": "EntryAbility",
     "deviceTypes": [
       "phone",
       "tablet",
@@ -14,12 +13,11 @@
     "pages": "$profile:main_pages",
     "abilities": [
       {
-        "name": "Activate_harmonyAbility",
-        "srcEntry": "./ets/activate_harmonyability/Activate_harmonyAbility.ets",
-        "description": "$string:Activate_harmonyAbility_desc",
-        "icon": "$media:icon",
-        "label": "$string:Activate_harmonyAbility_label",
-        "startWindowIcon": "$media:startIcon",
+        "name": "EntryAbility",
+        "srcEntry": "./ets/abilities/EntryAbility.ets",
+        "icon": "$media:app_icon",
+        "label": "$string:app_name",
+        "startWindowIcon": "$media:app_icon",
         "startWindowBackground": "$color:start_window_background",
         "exported": true,
         "skills": [
@@ -36,8 +34,8 @@
     ],
     "extensionAbilities": [
       {
-        "name": "Activate_harmonyBackupAbility",
-        "srcEntry": "./ets/activate_harmonybackupability/Activate_harmonyBackupAbility.ets",
+        "name": "BackupAbility",
+        "srcEntry": "./ets/abilities/BackupAbility.ets",
         "type": "backup",
         "exported": false,
         "metadata": [

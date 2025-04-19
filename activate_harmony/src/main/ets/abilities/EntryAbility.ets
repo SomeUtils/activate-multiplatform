@@ -6,7 +6,7 @@ import window from '@ohos.window';
 
 const DOMAIN = 0x0000;
 
-export default class Activate_harmonyAbility extends UIAbility {
+export default class EntryAbility extends UIAbility {
   onCreate(want: Want, launchParam: AbilityConstant.LaunchParam): void {
     hilog.info(DOMAIN, 'testTag', '%{public}s', 'Ability onCreate');
   }

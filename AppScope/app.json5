@@ -1,9 +1,9 @@
 {
   "app": {
     "bundleName": "vip.cdms.activate.harmony",
-    "vendor": "example",
-    "versionCode": 1000000,
-    "versionName": "1.0.0",
+    "vendor": "Cdm2883",
+    "versionCode": 1,
+    "versionName": "0.0.1",
     "icon": "$media:app_icon",
     "label": "$string:app_name"
   }
