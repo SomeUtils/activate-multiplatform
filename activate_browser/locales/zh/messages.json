@@ -1,0 +1,18 @@
+{
+  "title": {
+    "message": "激活 $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "content": {
+    "message": "转到“设置”以激活 $name$。",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  }
+}

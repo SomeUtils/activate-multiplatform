@@ -1,26 +1,25 @@
-import {useState} from "react"
+import {useStorage} from "@plasmohq/storage/hook";
 
 function IndexPopup() {
-    const [data, setData] = useState("")
+    const [title, setTitle] = useStorage<string>("title")
+    const [content, setContent] = useStorage<string>("content")
 
-    return (
-        <div
-            style={{
-                padding: 16
-            }}>
-            <h2>
-                Welcome to your{" "}
-                <a href="https://www.plasmo.com" target="_blank">
-                    Plasmo
-                </a>{" "}
-                Extension!
-            </h2>
-            <input onChange={(e) => setData(e.target.value)} value={data}/>
-            <a href="https://docs.plasmo.com" target="_blank">
-                View Docs
-            </a>
-        </div>
-    )
+    return <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        width: 500,
+        color: 'black',
+        backgroundColor: 'white',
+    }}>
+        <input
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+        />
+        <input
+            value={content}
+            onChange={(e) => setContent(e.target.value)}
+        />
+    </div>
 }
 
 export default IndexPopup

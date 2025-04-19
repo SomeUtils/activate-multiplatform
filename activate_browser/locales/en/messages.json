@@ -1,0 +1,18 @@
+{
+  "title": {
+    "message": "Activate $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "content": {
+    "message": "Go to Settings to activate $name$.",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  }
+}
