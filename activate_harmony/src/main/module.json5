@@ -1,0 +1,52 @@
+{
+  "module": {
+    "name": "activate_harmony",
+    "type": "entry",
+    "description": "$string:module_desc",
+    "mainElement": "Activate_harmonyAbility",
+    "deviceTypes": [
+      "phone",
+      "tablet",
+      "2in1"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "Activate_harmonyAbility",
+        "srcEntry": "./ets/activate_harmonyability/Activate_harmonyAbility.ets",
+        "description": "$string:Activate_harmonyAbility_desc",
+        "icon": "$media:icon",
+        "label": "$string:Activate_harmonyAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true,
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ]
+      }
+    ],
+    "extensionAbilities": [
+      {
+        "name": "Activate_harmonyBackupAbility",
+        "srcEntry": "./ets/activate_harmonybackupability/Activate_harmonyBackupAbility.ets",
+        "type": "backup",
+        "exported": false,
+        "metadata": [
+          {
+            "name": "ohos.extension.backup",
+            "resource": "$profile:backup_config"
+          }
+        ],
+      }
+    ]
+  }
+}

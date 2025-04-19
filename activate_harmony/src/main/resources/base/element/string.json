@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "Activate_harmonyAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "Activate_harmonyAbility_label",
+      "value": "label"
+    }
+  ]
+}
