@@ -1,0 +1,29 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Activate Bedrock",
+    "description": "The \"Activate Windows\" watermark port of Minecraft Bedrock Edition.",
+    "uuid": "6aaa4fed-9660-446d-82da-f1d79afb3f08",
+    "version": [
+      0,
+      0,
+      1
+    ],
+    "min_engine_version": [
+      1,
+      13,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "version": [
+        0,
+        0,
+        1
+      ],
+      "uuid": "6d775dc0-d074-4070-9b01-d0cc3fb23135"
+    }
+  ]
+}
